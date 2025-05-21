@@ -1,10 +1,10 @@
 
 import React from 'react';
-import { Icon as LucideIconType } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react'; // Import LucideIcon as a type
 
 interface TimelineItemProps {
-  icon: LucideIconType;
-  IconComponent?: LucideIconType; // Para casos onde o ícone é passado como componente
+  icon: LucideIcon; // Use LucideIcon type for the main icon
+  IconComponent?: LucideIcon; // Use LucideIcon type for the optional IconComponent
   title: string;
   description: string;
   date?: string; // Opcional
@@ -12,7 +12,7 @@ interface TimelineItemProps {
 }
 
 const TimelineItem: React.FC<TimelineItemProps> = ({ icon: Icon, IconComponent, title, description, date, isOdd }) => {
-  const ActualIcon = IconComponent || Icon;
+  const ActualIcon = IconComponent || Icon; // Icon is the passed specific icon component (e.g., Coffee, Home)
   return (
     <div className={`mb-8 flex justify-between items-center w-full ${isOdd ? 'flex-row-reverse' : ''}`}>
       <div className="order-1 w-5/12"></div>
