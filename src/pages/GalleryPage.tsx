@@ -11,21 +11,22 @@ import {
 
 const placeholderImages = [
   {
-    src: "public\images\Foto1.jpg",
+    src: "/images/Foto1.jpg",
     alt: "",
-    caption: "Momentos de alegria e cumplicidade."
+    caption: "Momentos de alegria e cumplicidade.",
   },
   {
-    src: "/images/Foto2",
+    src: "/images/Foto2.jpg",
     alt: "",
-    caption: "Juntos em cada jornada."
+    caption: "Juntos em cada jornada.",
   },
   {
-    src: "/images/Foto3",
+    src: "/images/Foto3.jpg",
     alt: "",
-    caption: "A beleza dos nossos caminhos."
+    caption: "A beleza dos nossos caminhos.",
   },
 ];
+
 
 const GalleryPage: React.FC = () => {
   return (
