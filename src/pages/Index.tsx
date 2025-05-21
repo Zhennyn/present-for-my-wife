@@ -1,14 +1,10 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+// Este arquivo não é mais o principal ponto de entrada visual.
+// O conteúdo foi movido para src/pages/Home.tsx e é renderizado através do Layout em App.tsx
+// Manter o arquivo para evitar erros de build, mas ele não será mais renderizado diretamente.
 
 const Index = () => {
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
-  );
+  return null; // Ou um redirecionamento para Home, mas o Router já cuida disso.
 };
 
 export default Index;

@@ -1,92 +1,61 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 20 100% 98%; /* #FFF0F5 - Rosé bem claro (Lavender Blush) */
+    --foreground: 340 70% 20%; /* Vinho escuro para texto principal */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%; /* Branco */
+    --card-foreground: 340 70% 20%; /* Vinho escuro para texto no card */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 340 70% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 340 70% 28%; /* #5D0F23 - Vinho */
+    --primary-foreground: 0 0% 98%; /* Branco para texto sobre primário */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 350 100% 95%; /* #FFE4E1 - Misty Rose (Rosé mais suave) */
+    --secondary-foreground: 340 70% 28%; /* Vinho para texto sobre secundário */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 350 20% 92%; /* Um tom de rosé mais acinzentado/claro */
+    --muted-foreground: 340 10% 45%; /* Cor de texto suave */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 330 80% 60%; /* Um rosa mais vibrante para acentos, se necessário */
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 350 30% 88%; /* Borda em tom rosé */
+    --input: 350 30% 88%;
+    --ring: 340 70% 28%; /* Anel de foco em vinho */
 
-    --radius: 0.5rem;
+    --radius: 0.75rem; /* Bordas um pouco mais arredondadas */
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* ... Manter as variáveis do sidebar se forem usadas ... */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Definir variáveis para modo escuro se desejado no futuro, por agora focamos no tema claro romântico */
+    --background: 340 70% 10%; /* Vinho bem escuro para fundo dark */
+    --foreground: 20 100% 98%; /* Rosé bem claro para texto dark */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 340 70% 15%;
+    --card-foreground: 20 100% 98%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 340 70% 15%;
+    --popover-foreground: 20 100% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 20 100% 90%; /* Rosé claro para primário dark */
+    --primary-foreground: 340 70% 10%; /* Vinho escuro para texto sobre primário dark */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 340 40% 25%; /* Vinho um pouco mais claro para secundário dark */
+    --secondary-foreground: 20 100% 90%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+     /* ... outras variáveis dark ... */
   }
 }
 
@@ -96,6 +65,24 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #root {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  h1, h2, h3 {
+    @apply font-dancing-script;
   }
 }
+
