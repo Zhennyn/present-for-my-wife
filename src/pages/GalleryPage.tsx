@@ -11,18 +11,18 @@ import {
 
 const placeholderImages = [
   {
-    src: "/images/Foto1",
-    alt: "Uma mulher sorrindo sentada em uma cama usando um laptop, representando um momento de felicidade.",
+    src: "C:\Users\Zhennyn\Desktop\present-for-my-wife\public\images\Foto1.jpg",
+    alt: "",
     caption: "Momentos de alegria e cumplicidade."
   },
   {
     src: "/images/Foto2",
-    alt: "Uma mulher concentrada trabalhando em seu laptop, simbolizando parceria e apoio.",
+    alt: "",
     caption: "Juntos em cada jornada."
   },
   {
     src: "/images/Foto3",
-    alt: "Dois cervos em uma paisagem natural, representando a beleza e a serenidade dos momentos compartilhados.",
+    alt: "",
     caption: "A beleza dos nossos caminhos."
   },
 ];
