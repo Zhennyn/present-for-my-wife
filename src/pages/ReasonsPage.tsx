@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Heart } from 'lucide-react';
 
@@ -13,6 +12,13 @@ const reasonsToLove = [
   "Seu abraço",
   "Seu beijo",
   "Seu cuidado",
+  "Sua inteligência sagaz",
+  "O jeito que me olha",
+  "Sua risada contagiante",
+  "Seu cheirinho bom",
+  "Sua paciência (quase sempre!)",
+  "Nossas conversas que viram a noite",
+  "Seu apoio incondicional nas minhas loucuras",
 ];
 
 const ReasonsPage: React.FC = () => {
@@ -64,7 +70,7 @@ const ReasonsPage: React.FC = () => {
         )}
          {displayedReasons.length === reasonsToLove.length && (
            <p className="font-great-vibes text-xl text-custom-vinho mt-6 pt-4 border-t border-custom-vinho/20">
-            ... e muitos mais!
+            ... e muitos mais virão! Te amo!
           </p>
          )}
       </div>
@@ -83,4 +89,3 @@ const ReasonsPage: React.FC = () => {
 };
 
 export default ReasonsPage;
-
