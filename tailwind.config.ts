@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -112,14 +113,20 @@ export default {
         'blink-caret': {
           'from, to': { borderColor: 'transparent' },
           '50%': { borderColor: 'hsl(var(--primary))' }
-        }
+        },
+        'firework-sparkle-kf': {
+          '0%': { transform: 'scale(0.3) translateY(5px)', opacity: '0' },
+          '20%': { opacity: '1' },
+          '100%': { transform: 'scale(1.1) translateY(-50px) rotate(180deg)', opacity: '0' },
+        },
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
         'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
         'typewriter': 'typewriter 3.5s steps(40, end) 1s 1 normal both',
-        'blink-caret': 'blink-caret .75s step-end infinite'
+        'blink-caret': 'blink-caret .75s step-end infinite',
+        'firework-sparkle': 'firework-sparkle-kf ease-out forwards', // Duration and delay will be set inline
 			}
 		}
 	},
