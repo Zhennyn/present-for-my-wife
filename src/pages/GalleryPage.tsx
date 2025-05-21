@@ -13,7 +13,7 @@ const placeholderImages = [
   {
     src: "/images/Foto1.jpg",
     alt: "",
-    caption: "Momentos de alegria e cumplicidade.",
+    caption: "Momentos de alegria.",
   },
   {
     src: "/images/Foto2.jpg",
