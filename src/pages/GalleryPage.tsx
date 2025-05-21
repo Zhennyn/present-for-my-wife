@@ -11,17 +11,17 @@ import {
 
 const placeholderImages = [
   {
-    src: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+    src: "/images/Foto1",
     alt: "Uma mulher sorrindo sentada em uma cama usando um laptop, representando um momento de felicidade.",
     caption: "Momentos de alegria e cumplicidade."
   },
   {
-    src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+    src: "/images/Foto2",
     alt: "Uma mulher concentrada trabalhando em seu laptop, simbolizando parceria e apoio.",
     caption: "Juntos em cada jornada."
   },
   {
-    src: "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600",
+    src: "/images/Foto3",
     alt: "Dois cervos em uma paisagem natural, representando a beleza e a serenidade dos momentos compartilhados.",
     caption: "A beleza dos nossos caminhos."
   },
