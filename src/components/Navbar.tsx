@@ -1,14 +1,14 @@
 
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, CalendarHeart, Image, Star, BookOpen, Music2 } from 'lucide-react'; // Ícones representando as seções
+import { Home, CalendarHeart, Image, Star, PartyPopper, Music2 } from 'lucide-react'; // Ícones representando as seções // PartyPopper adicionado
 
 const navItems = [
   { name: 'Início', path: '/', icon: Home },
   { name: 'Nossa História', path: '/timeline', icon: CalendarHeart },
   { name: 'Memórias', path: '/gallery', icon: Image },
   { name: 'Eu Te Amo Por...', path: '/reasons', icon: Star },
-  { name: 'Cápsula do Tempo', path: '/capsule', icon: BookOpen },
+  { name: 'Jogo do Pedido', path: '/proposal-game', icon: PartyPopper }, // Alterado de Cápsula do Tempo para Jogo do Pedido
   // { name: 'Nossa Música', path: '/music', icon: Music2 }, // Bônus, adicionar depois
 ];
 
