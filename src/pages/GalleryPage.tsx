@@ -11,7 +11,7 @@ import {
 
 const placeholderImages = [
   {
-    src: "C:\Users\Zhennyn\Desktop\present-for-my-wife\public\images\Foto1.jpg",
+    src: "public\images\Foto1.jpg",
     alt: "",
     caption: "Momentos de alegria e cumplicidade."
   },
