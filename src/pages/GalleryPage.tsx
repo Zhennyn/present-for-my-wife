@@ -13,17 +13,37 @@ const placeholderImages = [
   {
     src: "/images/Foto1.jpg",
     alt: "",
-    caption: "Momentos de alegria.",
+    caption: "",
   },
   {
     src: "/images/Foto2.jpg",
     alt: "",
-    caption: "Juntos em cada jornada.",
+    caption: "",
   },
   {
     src: "/images/Foto3.jpg",
     alt: "",
-    caption: "A beleza dos nossos caminhos.",
+    caption: "",
+  },
+  {
+    src: "/images/Foto4.jpg",
+    alt: "",
+    caption: "",
+  },
+  {
+    src: "/images/Foto5.jpg",
+    alt: "",
+    caption: "",
+  },
+  {
+    src: "/images/Foto6.jpg",
+    alt: "",
+    caption: "",
+  },
+  {
+    src: "/images/Foto7.jpg",
+    alt: "",
+    caption: "",
   },
 ];
 
